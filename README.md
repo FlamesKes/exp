@@ -2,5 +2,5 @@
 а именно:
 1) hosts адрес хоста и пароль от root
 Далее будут указаны файлы, в которых нужно заменить только ip на адрес своей машинки
-2) ./exp/etc/proxy/nginx.conf если зохочется проверить блокировку по ip
-3) ./exp/etc/waf/local_policy.yaml
+2) ./nginx/exp/etc/proxy/nginx.conf если зохочется проверить блокировку по ip
+3) ./nginx/exp/etc/waf/local_policy.yaml
