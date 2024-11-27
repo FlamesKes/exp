@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: postgres
+    static_configs:
+      - targets: ["postgres-exporter:9187"]
+  
+  - job_name: 'nginx'
+    tls_config:
+      insecure_skip_verify: true        
+    static_configs:
+      - targets: [nginx-exporter:9113]
+
+  - job_name: node
+    static_configs:
+      - targets: ['node-exporter:9100']
